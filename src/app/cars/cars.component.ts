@@ -50,26 +50,31 @@ constructor() {
 //   this.addCarStatus=true;
 //   }
   // Блок 2 урок 8
- carName="";
- addCarStatus=false;
+  //  carName="";
+  //  addCarStatus=false;
 
-  cars=["Ford", "Audi", "BMW"];
-  items=[{
-    id: 1,
-    name: "item1"
-  },{
-    id: 2,
-    name: "item2"
-  },{
-    id: 3,
-    name: "item3"
-  }]
+  //   cars=["Ford", "Audi", "BMW"];
+  //   items=[{
+  //     id: 1,
+  //     name: "item1"
+  //   },{
+  //     id: 2,
+  //     name: "item2"
+  //   },{
+  //     id: 3,
+  //     name: "item3"
+  //   }]
 
-  addCar() {
-    this.addCarStatus=true;
-    this.cars.push(this.carName);
-    this.carName = '';
-    }
+  //   addCar() {
+  //     this.addCarStatus=true;
+  //     this.cars.push(this.carName);
+  //     this.carName = '';
+  //     }
 
+// Блок 2 урок 9
+ cars=["Ford", "Audi", "BMW", "Mercedes", "Lada"];
 
+ setBigCarText(car: string) {
+ return car.length > 4 ? true:false;
+ }
 }

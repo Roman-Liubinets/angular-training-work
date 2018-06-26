@@ -23,7 +23,7 @@
     <!-- <p>+</p> -->
 <!-- </ng-template> -->
 <!-- Блок 2 урок 8 -->
-<input type="text" class="form-control" [(ngModel)]="carName">
+<!-- <input type="text" class="form-control" [(ngModel)]="carName">
 <button (click)="addCar()" class="btn btn-primary">Добавити машину</button><hr>
 <p *ngIf="!addCarStatus; else successStatus">Не добавлена</p>
 <ng-template #successStatus>
@@ -35,4 +35,11 @@
     <li *ngFor="let item of items; let idx = index">
         <b>{{idx + 1}}</b>-<i>{{item.name}}</i>
     </li>
-</ul>  
+</ul>   -->
+<!-- Блок 2 урок 9 -->
+<ul>
+    <li *ngFor="let car of cars; let idx = index">
+        <div [ngStyle]="{backgroundColor: (idx+1)%2===0 ? 'red' :'transparent'}" [ngClass]="{'big-text': setBigCarText(car)}"
+        ><b>{{idx + 1}}</b> - {{car}}</div>
+    </li>
+</ul>
