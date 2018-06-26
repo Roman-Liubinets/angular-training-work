@@ -1,15 +1,38 @@
-<!-- <button [disabled]="!canAddCar" class="btn btn-primary">Добавити машину</button>
-<button (click)="addCar()" class="btn btn-primary">Добавити машину</button><hr>
-<p>{{addCarstatus}}</p>
-<app-car></app-car>      
-<app-car></app-car>
-блок 2 5 урок-->
+<!-- <button [disabled]="!canAddCar" class="btn btn-primary">Добавити машину</button> -->
+<!-- <button (click)="addCar()" class="btn btn-primary">Добавити машину</button><hr>
+<p>{{addCarstatus}}</p> -->
+<!-- <app-car></app-car>       -->
+<!-- <app-car></app-car> -->
+<!-- блок 2 5 урок -->
 <!-- <input type="text" class="form-control" (keyup)="onKeyUp($event)"> -->
 <!-- <input type="text" class="form-control" (keyup.enter)="onKeyUp($event)"> -->
 <!-- <input type="text" class="form-control" #myInp (input)="onKeyUp(myInp.value)"> -->
 <!-- блок 2 6 урок don't working -->
-<input type="text" class="form-control" (keyup.enter)="onKeyUp($event)" >
-<input type="text" class="form-control" [(ngModel)]="inputFormtext">
+<!-- <input type="text" class="form-control" (keyup.enter)="onKeyUp($event)" > -->
+<!-- <input type="text" class="form-control" [(ngModel)]="inputFormtext"> -->
 <!-- <input type="text"[(ngModel)]="inputFormtext">  -->
-<span>{{inputFormtext}}</span>
+<!-- <span>{{inputFormtext}}</span> -->
+<!-- Блок 2 7 урок -->
+    <!-- <input type="text" class="form-control" [(ngModel)]="carName">
+    <button (click)="addCar()" class="btn btn-primary">Добавити машину</button> -->
+<!-- <p *ngIf="addCarStatus">Машина добавлена</p> -->
+<!-- <p *ngIf="!addCarStatus">Не добавлена</p> -->
+<!-- За допомогою Else angular -->
+<!-- <p *ngIf=<p></p>"!addCarStatus; else successStatus">-</p> -->
+<!-- <ng-template #successStatus> -->
+    <!-- <p>+</p> -->
+<!-- </ng-template> -->
+<!-- Блок 2 урок 8 -->
+<input type="text" class="form-control" [(ngModel)]="carName">
+<button (click)="addCar()" class="btn btn-primary">Добавити машину</button><hr>
+<p *ngIf="!addCarStatus; else successStatus">Не добавлена</p>
+<ng-template #successStatus>
+    <p>добавлена</p>
+</ng-template><hr>
 
+<app-car *ngFor="let car of cars"></app-car>
+<ul>
+    <li *ngFor="let item of items; let idx = index">
+        <b>{{idx + 1}}</b>-<i>{{item.name}}</i>
+    </li>
+</ul>  
