@@ -3,11 +3,11 @@
   <form (ngSubmit)="submitForm(form)" #form="ngForm">
     <div class="form-group">
       <label class="control-label">email</label>
-      <input type="text" ngModel name="email" class="form-control">
+      <input type="text" ngModel name="email" required email class="form-control">
     </div>
     <div class="form-group">
       <label class="control-label">password</label>
-      <input type="password" ngModel name="pass" class="form-control">
+      <input type="password" required ngModel name="pass" class="form-control">
     </div>
     <div class="form-group">
       <label class="control-label">Выбрать страну</label>
@@ -22,6 +22,6 @@
         <input type="radio" [value]="ans.type"> {{ans.text}}
       </label>
     </div><hr>
-    <button class="btn btn-success" type="submit">Сохранить</button>
+    <button class="btn btn-success" [disabled]="!form.valid" type="submit">Сохранить</button>
   </form>
 </div> 
