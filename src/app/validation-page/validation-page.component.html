@@ -1,0 +1,27 @@
+<!-- TD Створенн форми -->
+<div class="col-xs-8 col-xs-offset-2">
+  <form (ngSubmit)="submitForm(form)" #form="ngForm">
+    <div class="form-group">
+      <label class="control-label">email</label>
+      <input type="text" ngModel name="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label class="control-label">password</label>
+      <input type="password" ngModel name="pass" class="form-control">
+    </div>
+    <div class="form-group">
+      <label class="control-label">Выбрать страну</label>
+      <select ngModel name="country" class="form-control">
+        <option value="ru">Россия</option>
+        <option value="by">Белеарусь</option>
+        <option value="ua">Украина</option>
+      </select>
+    </div>
+    <div class="form-check">
+      <label *ngFor="let ans of answer" class="form-check-label">
+        <input type="radio" [value]="ans.type"> {{ans.text}}
+      </label>
+    </div><hr>
+    <button class="btn btn-success" type="submit">Сохранить</button>
+  </form>
+</div> 
