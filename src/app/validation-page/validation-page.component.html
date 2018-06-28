@@ -2,17 +2,18 @@
 <div class="col-xs-8 col-xs-offset-2">
   <form (ngSubmit)="submitForm(form)" #form="ngForm">
     <div ngModelGroup="user" #user="ngModelGroup">
-        <div class="form-group" [ngClass]="{'has-error': email.invalid && email.touched}">
-            <label class="control-label">email</label>
-            <input type="text" ngModel name="email" required email #email="ngModel" class="form-control">
-            <p *ngIf="email.invalid && email.touched" class="text-muted">Введите коректный емейл</p>
-          </div>
-          <div class="form-group" [ngClass]="{'has-error': pass.invalid && pass.touched}">
-            <label class="control-label">password</label>
-            <input type="password" required ngModel name="pass" #pass="ngModel" class="form-control">
-            <p *ngIf="pass.invalid && pass.touched" class="text-muted">Введите пароль</p>
-          </div>
-          <p *ngIf="user.invalid && user.touched" class="text-muted">Данные пользователя введены некорректно!</p>
+      <div class="form-group" [ngClass]="{'has-error': email.invalid && email.touched}">
+        <label class="control-label">email</label>
+        <input type="text" ngModel name="email" required email #email="ngModel" class="form-control">
+        <p *ngIf="email.invalid && email.touched" class="text-muted">Введите коректный емейл</p>
+        <button class="btn-primary" (click)="addRandEmail()">Добавить случайный email</button>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': pass.invalid && pass.touched}">
+        <label class="control-label">password</label>
+        <input type="password" required ngModel name="pass" #pass="ngModel" class="form-control">
+        <p *ngIf="pass.invalid && pass.touched" class="text-muted">Введите пароль</p>
+      </div>
+      <p *ngIf="user.invalid && user.touched" class="text-muted">Данные пользователя введены некорректно!</p>
     </div>
     <div class="form-group">
       <label class="control-label">Выбрать страну</label>

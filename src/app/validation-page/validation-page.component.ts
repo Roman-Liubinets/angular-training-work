@@ -23,5 +23,9 @@ export class ValidationPageComponent {
   submitForm(form: NgForm) {
     console.log("Submited!", form);
   }
+
+  addRandEmail() {
+    
+  }
 }
 
