@@ -15,7 +15,10 @@ export class ValidationPageComponent {
   },{
     type: 'no',
     text: 'Нет'
-  }]
+  }];
+
+  defaultAnswer="yes";
+  defaultCountry="ua";
 
   submitForm(form: NgForm) {
     console.log("Submited!", form);
