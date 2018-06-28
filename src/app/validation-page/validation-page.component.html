@@ -1,13 +1,15 @@
 <!-- TD Створенн форми -->
 <div class="col-xs-8 col-xs-offset-2">
   <form (ngSubmit)="submitForm(form)" #form="ngForm">
-    <div class="form-group">
+    <div class="form-group" [ngClass]="{'has-error': email.invalid && email.touched}">
       <label class="control-label">email</label>
-      <input type="text" ngModel name="email" required email class="form-control">
+      <input type="text" ngModel name="email" required email #email="ngModel" class="form-control">
+      <p *ngIf="email.invalid && email.touched" class="text-muted">Введите коректный емейл</p>
     </div>
-    <div class="form-group">
+    <div class="form-group" [ngClass]="{'has-error': pass.invalid && pass.touched}">
       <label class="control-label">password</label>
-      <input type="password" required ngModel name="pass" class="form-control">
+      <input type="password" required ngModel name="pass" #pass="ngModel" class="form-control">
+      <p *ngIf="pass.invalid && pass.touched" class="text-muted">Введите пароль</p>
     </div>
     <div class="form-group">
       <label class="control-label">Выбрать страну</label>
@@ -21,7 +23,8 @@
       <label *ngFor="let ans of answer" class="form-check-label">
         <input type="radio" [value]="ans.type"> {{ans.text}}
       </label>
-    </div><hr>
+    </div>
+    <hr>
     <button class="btn btn-success" [disabled]="!form.valid" type="submit">Сохранить</button>
   </form>
-</div> 
+</div>
