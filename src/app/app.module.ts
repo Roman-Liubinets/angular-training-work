@@ -9,9 +9,13 @@ import { ValidationPageComponent } from './validation-page/validation-page.compo
 import { TComponentsComponent } from './t-components/t-components.component';
 import { TComponents2Component } from './t-components2/t-components2.component';
 // Block 3 lesson 2
-import { AddCarComponent } from './block3lesson2/add-car/add-car.component';
-import { CarComponent } from './block3lesson2/car/car.component';
-import { CarsComponent } from './block3lesson2/cars/cars.component';
+// import { AddCarComponent } from './block3lesson2/add-car/add-car.component';
+// import { CarComponent } from './block3lesson2/car/car.component';
+// import { CarsComponent } from './block3lesson2/cars/cars.component';
+// Block 3 lesson 3
+import { AddCarComponent } from './block3lesson3/add-car/add-car.component';
+import { CarComponent } from './block3lesson3/car/car.component';
+import { CarsComponent } from './block3lesson3/cars/cars.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +26,13 @@ import { CarsComponent } from './block3lesson2/cars/cars.component';
     TComponentsComponent,
     TComponents2Component,
     // Block 3 lesson 2
+    // AddCarComponent,
+    // CarComponent,
+    // CarsComponent
+    // Block 3 lesson 3
     AddCarComponent,
     CarComponent,
-    CarsComponent,
+    CarsComponent
   ],
   imports: [
     BrowserModule,
