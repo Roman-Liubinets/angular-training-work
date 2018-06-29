@@ -5,11 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './car.component.html',
   styleUrls: ['./car.component.css']
 })
-export class CarComponent {
-carName='Ford';
-carYear=1985;
-
-getName() {
-  return this.carName;
-}
-}
+export class CarComponent {}

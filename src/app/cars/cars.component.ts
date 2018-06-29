@@ -72,9 +72,9 @@ constructor() {
   //     }
 
 // Блок 2 урок 9
- cars=["Ford", "Audi", "BMW", "Mercedes", "Lada"];
+//  cars=["Ford", "Audi", "BMW", "Mercedes", "Lada"];
 
- setBigCarText(car: string) {
- return car.length > 4 ? true:false;
- }
+//  setBigCarText(car: string) {
+//  return car.length > 4 ? true:false;
+//  }
 }
