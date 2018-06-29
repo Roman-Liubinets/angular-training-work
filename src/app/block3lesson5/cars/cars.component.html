@@ -1,0 +1,9 @@
+<h2>Форма добавление машины</h2>
+<hr>
+<app-add-car (onAddCar)="updateCarList($event)"></app-add-car>
+<hr>
+<button class="btn btn-success" (click)="changeCarName()">Изменить название машины</button>
+
+<div class="list-group">
+    <app-car class="list-group-item" *ngFor="let car of cars" [carItem]="car"></app-car>
+</div>
