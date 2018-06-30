@@ -1,0 +1,8 @@
+<div class="form-group">
+    <input type="text" class="form-control" [(ngModel)]="searchCar">
+    </div>
+
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let car of cars | carFilter: searchCar, let idx = index">{{idx + 1}}
+            {{ car.name }}  <i>{{ car.decr}}</i></li>
+    </ul>
