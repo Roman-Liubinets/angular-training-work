@@ -42,8 +42,11 @@ import { Block4lesson1Component } from './block4/block4lesson5/block4lesson1.com
 // import { Block5lesson1Component } from './block5/block5lesson3/block5lesson1.component';
 // import { CarFilterPipe } from './block5/block5lesson3/car-filter.pipe';
 // Block 5 lesson 4
-import { Block5lesson1Component } from './block5/block5lesson4/block5lesson1.component';
-import { CarFilterPipe } from './block5/block5lesson4/car-filter.pipe';
+// import { Block5lesson1Component } from './block5/block5lesson4/block5lesson1.component';
+// import { CarFilterPipe } from './block5/block5lesson4/car-filter.pipe';
+// Block 5 lesson 5
+import { Block5lesson1Component } from './block5/block5lesson5/block5lesson1.component';
+import { CarFilterPipe } from './block5/block5lesson5/car-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -87,6 +90,9 @@ import { CarFilterPipe } from './block5/block5lesson4/car-filter.pipe';
     // Block5lesson1Component,
     // CarFilterPipe
     // Block 5 lesson 4
+    // Block5lesson1Component,
+    // CarFilterPipe
+    // Block 5 lesson 5
     Block5lesson1Component,
     CarFilterPipe
   ],
