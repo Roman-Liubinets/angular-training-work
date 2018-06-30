@@ -33,7 +33,11 @@ import { CarsComponent } from './block3lesson5/cars/cars.component';
 // Block 4 lesson 5
 import { Block4lesson1Directive } from './block4/block4lesson5/block4lesson1.directive';
 import { Block4lesson1Component } from './block4/block4lesson5/block4lesson1.component';
-import { Block5lesson1Component } from './block5/block5lesson1/block5lesson1.component';
+// Block 5 lesson 1
+// import { Block5lesson1Component } from './block5/block5lesson1/block5lesson1.component';
+// Block 5 lesson 2
+import { Block5lesson1Component } from './block5/block5lesson2/block5lesson1.component';
+import { Block5lesson2Pipe } from './block5/block5lesson2/block5lesson2.pipe';
 
 @NgModule({
   declarations: [
@@ -68,7 +72,11 @@ import { Block5lesson1Component } from './block5/block5lesson1/block5lesson1.com
     // Block 4 lesson 5
     Block4lesson1Directive,
     Block4lesson1Component,
-    Block5lesson1Component
+    // Block 5 lesson 1
+    // Block5lesson1Component
+    // Block 5 lesson 2
+    Block5lesson1Component,
+    Block5lesson2Pipe
   ],
   imports: [
     BrowserModule,
