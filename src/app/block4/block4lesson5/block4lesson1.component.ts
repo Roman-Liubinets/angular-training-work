@@ -13,7 +13,7 @@ export class Block4lesson1Component implements OnInit {
   }
 
   headerText = "Директивы"
-  items = [1, 2, 3, 4, 5];
+  items = [5, 4, 3, 2, 1];
   current = 1;
 
   onClick(number: number) {
