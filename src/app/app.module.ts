@@ -28,8 +28,11 @@ import { CarsComponent } from './block3lesson5/cars/cars.component';
 // import { Block4lesson1Directive } from './block4/block4lesson1/block4lesson1.directive';
 // import { Block4lesson1Component } from './block4/block4lesson1/block4lesson1.component';
 // Block 4 lesson 3
-import { Block4lesson1Directive } from './block4/block4lesson3/block4lesson1.directive';
-import { Block4lesson1Component } from './block4/block4lesson3/block4lesson1.component';
+// import { Block4lesson1Directive } from './block4/block4lesson3/block4lesson1.directive';
+// import { Block4lesson1Component } from './block4/block4lesson3/block4lesson1.component';
+// Block 4 lesson 5
+import { Block4lesson1Directive } from './block4/block4lesson5/block4lesson1.directive';
+import { Block4lesson1Component } from './block4/block4lesson5/block4lesson1.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +61,10 @@ import { Block4lesson1Component } from './block4/block4lesson3/block4lesson1.com
     // Block 4 lesson 1
     // Block4lesson1Directive,
     // Block4lesson1Component
-    // Block 4 lesson 2
+    // Block 4 lesson 3
+    // Block4lesson1Directive,
+    // Block4lesson1Component
+    // Block 4 lesson 5
     Block4lesson1Directive,
     Block4lesson1Component
   ],
