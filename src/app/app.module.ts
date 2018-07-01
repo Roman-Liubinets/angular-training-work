@@ -45,11 +45,17 @@ import { TComponents2Component } from './t-components2/t-components2.component';
 // import { Block5lesson1Component } from './block5/block5lesson4/block5lesson1.component';
 // import { CarFilterPipe } from './block5/block5lesson4/car-filter.pipe';
 // Block 5 lesson 5
-import { Block5lesson1Component } from './block5/block5lesson5/block5lesson1.component';
-import { CarFilterPipe } from './block5/block5lesson5/car-filter.pipe';
-import { Block6lesson1Component } from './block6/block6lesson1/block6lesson1.component';
-import { CarAddComponent } from './block6/block6lesson1/car-add/car-add.component';
-import { CarComponent } from './block6/block6lesson1/car/car.component';
+// import { Block5lesson1Component } from './block5/block5lesson5/block5lesson1.component';
+// import { CarFilterPipe } from './block5/block5lesson5/car-filter.pipe';
+// Block 6 lesson 1
+// import { Block6lesson1Component } from './block6/block6lesson1/block6lesson1.component';
+// import { CarAddComponent } from './block6/block6lesson1/car-add/car-add.component';
+// import { CarComponent } from './block6/block6lesson1/car/car.component';
+// Block 6 lesson 2
+import { Block6lesson1Component } from './block6/block6lesson2/block6lesson1.component';
+import { CarAddComponent } from './block6/block6lesson2/car-add/car-add.component';
+import { CarComponent } from './block6/block6lesson2/car/car.component';
+import { CarsService } from '../app/block6/block6lesson2/car.service';
 
 @NgModule({
   declarations: [
@@ -98,6 +104,11 @@ import { CarComponent } from './block6/block6lesson1/car/car.component';
     // Block 5 lesson 5
     // Block5lesson1Component,
     // CarFilterPipe,
+    // Block 6 lesson 1
+    // Block6lesson1Component,
+    // CarAddComponent,
+    // CarComponent
+    // Block 6 lesson 2
     Block6lesson1Component,
     CarAddComponent,
     CarComponent
@@ -107,7 +118,7 @@ import { CarComponent } from './block6/block6lesson1/car/car.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CarsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
