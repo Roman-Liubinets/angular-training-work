@@ -21,9 +21,9 @@ import { TComponents2Component } from './t-components2/t-components2.component';
 // import { CarComponent } from './block3lesson4/car/car.component';  
 // import { CarsComponent } from './block3lesson4/cars/cars.component';
 // Block 3 lesson 5
-import { AddCarComponent } from './block3lesson5/add-car/add-car.component';
-import { CarComponent } from './block3lesson5/car/car.component';  
-import { CarsComponent } from './block3lesson5/cars/cars.component';
+// import { AddCarComponent } from './block3lesson5/add-car/add-car.component';
+// import { CarComponent } from './block3lesson5/car/car.component';  
+// import { CarsComponent } from './block3lesson5/cars/cars.component';
 // Block 4 lesson 1
 // import { Block4lesson1Directive } from './block4/block4lesson1/block4lesson1.directive';
 // import { Block4lesson1Component } from './block4/block4lesson1/block4lesson1.component';
@@ -31,8 +31,8 @@ import { CarsComponent } from './block3lesson5/cars/cars.component';
 // import { Block4lesson1Directive } from './block4/block4lesson3/block4lesson1.directive';
 // import { Block4lesson1Component } from './block4/block4lesson3/block4lesson1.component';
 // Block 4 lesson 5
-import { Block4lesson1Directive } from './block4/block4lesson5/block4lesson1.directive';
-import { Block4lesson1Component } from './block4/block4lesson5/block4lesson1.component';
+// import { Block4lesson1Directive } from './block4/block4lesson5/block4lesson1.directive';
+// import { Block4lesson1Component } from './block4/block4lesson5/block4lesson1.component';
 // Block 5 lesson 1
 // import { Block5lesson1Component } from './block5/block5lesson1/block5lesson1.component';
 // Block 5 lesson 2
@@ -47,6 +47,9 @@ import { Block4lesson1Component } from './block4/block4lesson5/block4lesson1.com
 // Block 5 lesson 5
 import { Block5lesson1Component } from './block5/block5lesson5/block5lesson1.component';
 import { CarFilterPipe } from './block5/block5lesson5/car-filter.pipe';
+import { Block6lesson1Component } from './block6/block6lesson1/block6lesson1.component';
+import { CarAddComponent } from './block6/block6lesson1/car-add/car-add.component';
+import { CarComponent } from './block6/block6lesson1/car/car.component';
 
 @NgModule({
   declarations: [
@@ -69,9 +72,9 @@ import { CarFilterPipe } from './block5/block5lesson5/car-filter.pipe';
     // CarComponent,
     // CarsComponent
     // Block 3 lesson 4
-    AddCarComponent,
-    CarComponent,
-    CarsComponent,
+    // AddCarComponent,
+    // CarComponent,
+    // CarsComponent,
     // Block 4 lesson 1
     // Block4lesson1Directive,
     // Block4lesson1Component
@@ -79,8 +82,8 @@ import { CarFilterPipe } from './block5/block5lesson5/car-filter.pipe';
     // Block4lesson1Directive,
     // Block4lesson1Component
     // Block 4 lesson 5
-    Block4lesson1Directive,
-    Block4lesson1Component,
+    // Block4lesson1Directive,
+    // Block4lesson1Component,
     // Block 5 lesson 1
     // Block5lesson1Component
     // Block 5 lesson 2
@@ -93,8 +96,12 @@ import { CarFilterPipe } from './block5/block5lesson5/car-filter.pipe';
     // Block5lesson1Component,
     // CarFilterPipe
     // Block 5 lesson 5
-    Block5lesson1Component,
-    CarFilterPipe
+    // Block5lesson1Component,
+    // CarFilterPipe,
+    Block6lesson1Component,
+    CarAddComponent,
+    CarComponent
+
   ],
   imports: [
     BrowserModule,
